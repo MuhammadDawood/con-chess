@@ -3,7 +3,7 @@
 * Authors: Stuart Larsen(SCL)                                                           *
 * Description:                                                                          *
 * 	Each individual game will be it's own object. It'll handle the players, board,  *
-*	and all major interactiong pretaining to them.                                  *
+*	and all major interactions pertaining to them.                                  *
 *                                                                                       *      
 * Major Modifications                                                                   *
 * 19Mar10 SCL	Intial Coding.                                                          *
@@ -14,7 +14,7 @@ class Game
 {
 	Board *board;
 	Player player1, player2;
-	Timer timer1, timer2;
+	Timer timer1, timer2; //Shouldn't timer be a member of player?
 	Move *moves;
 	
 public:

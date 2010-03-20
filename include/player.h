@@ -9,20 +9,21 @@
 *                                                                                       *      
 * Major Modifications                                                                   *
 * 19Mar10 SCL	Intial Coding.                                                          *
+* 20Mar10 SCL	cleaned up class.                                                       *
 ****************************************************************************************/
 
 class Player
 {
-	string name;
-	int rating;
-	int color;
-	int rating;
+	std::string myName;
+	int myRating;
+	int myColor;
+	int myRating;
 	
 public:
 	Player(string n) : name(n);
 	
 	virtual Move getMove() = 0;
-	getName()
-	getRating()
-	getColor()
+	std::string getName const ( return myName; )
+	int getRating const ( return myRating; )
+	int getColor const ( return myColor; )
 };

@@ -10,18 +10,16 @@
 *                                                                                       *      
 * Major Modifications                                                                   *
 * 19Mar10 SCL	Intial Coding.                                                          *
+* 20Mar10 SCL 	Changed namespace to class                                              *
 ****************************************************************************************/
 
-namespace Move {
-
-	struct Move {
-		int fromX, fromY;
-		int toX, toY;
-		string CAmove; // Chess algabraic move
-	}
-
-	Move makeMove(x, y) { /* ... */ }
-	Move makeMove(string CAMove) { /* ... */ }
+class Move {
+	int fromX, fromY;
+	int toX, toY;
+	string CAMove;
+	PieceType myType;
+	
+public:
+	Move(int x, y) { /* Move */ }
+	Move(sting CAMove) { /* Blah */ }
 }
-
-

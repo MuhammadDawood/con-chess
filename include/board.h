@@ -11,7 +11,8 @@
 ****************************************************************************************/
 class Board
 {
-     vector<piece> myPieces(32); /* Or a list? */ /* Or split into two vectors */
+     vector<piece> whitePieces(16); //Vectors should be fine, since we don't have to add anything and will have to index a lot.
+     vector<piece> blackPieces(16); //I'm in favor of splitting it up though.
      void initiate(); /* Set up stuff */
      Moves *moves;
      
